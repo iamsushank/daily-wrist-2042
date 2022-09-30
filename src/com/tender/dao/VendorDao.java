@@ -7,4 +7,5 @@ public interface VendorDao {
 	
 	public Vendor loginStudent(int userID, String password) throws VendorException;
 	
+	
 }

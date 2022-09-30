@@ -1,10 +1,15 @@
 package com.tender.dao;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.tender.bean.Tender;
 import com.tender.bean.Vendor;
+import com.tender.exceptions.TenderException;
 import com.tender.exceptions.VendorException;
 import com.tender.utility.DBUtility;
 
@@ -45,8 +50,6 @@ public class VendorDaoImpl implements VendorDao{
 		
 		return vendor;
 	}
-	
-	
 	
 	
 }
