@@ -9,13 +9,13 @@ public class Bid {
 	private int amount;
 	private int vid;
 	private Date deadline;
-	private boolean check;
+	private int check;
 	
 	
 	public Bid() {}
 	
 	
-	public Bid(int bid, int tid, int amount, int vid, Date deadline, boolean check) {
+	public Bid(int bid, int tid, int amount, int vid, Date deadline, int check) {
 		super();
 		this.bid = bid;
 		this.tid = tid;
@@ -76,12 +76,12 @@ public class Bid {
 	}
 
 
-	public boolean isCheck() {
+	public int getCheck() {
 		return check;
 	}
 
 
-	public void setCheck(boolean check) {
+	public void setCheck(int check) {
 		this.check = check;
 	}
 
@@ -91,6 +91,8 @@ public class Bid {
 		return "Bid [bid=" + bid + ", tid=" + tid + ", amount=" + amount + ", vid=" + vid + ", deadline=" + deadline
 				+ ", check=" + check + "]";
 	}
+
+
 	
 	
 }

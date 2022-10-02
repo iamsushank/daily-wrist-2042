@@ -9,4 +9,6 @@ public interface BidDao {
 	
 	public String viewStatus(int bid) throws BidException;
 	
+	public void assignTender(int tenderId) throws BidException;
+	
 }

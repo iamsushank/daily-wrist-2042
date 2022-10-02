@@ -9,11 +9,11 @@ public class Tender {
 	private String type;
 	private int amount;
 	private String location;
-	private Date deadline;
+	private String deadline;
 	
 	public Tender() {}
 
-	public Tender(int tid, String tName, String type, int amount, String location, Date deadline) {
+	public Tender(int tid, String tName, String type, int amount, String location, String deadline) {
 		super();
 		this.tid = tid;
 		this.tName = tName;
@@ -63,20 +63,21 @@ public class Tender {
 		this.location = location;
 	}
 
-	public Date getDate() {
+	public String getDeadline() {
 		return deadline;
 	}
 
-	public void setDate(Date date) {
-		this.deadline = date;
+	public void setDeadline(String deadline) {
+		this.deadline = deadline;
 	}
 
 	@Override
 	public String toString() {
 		return "Tender [tid=" + tid + ", tName=" + tName + ", type=" + type + ", amount=" + amount + ", location="
-				+ location + ", date=" + deadline + "]";
+				+ location + ", deadline=" + deadline + "]";
 	}
-	
+
+
 	
 	
 }

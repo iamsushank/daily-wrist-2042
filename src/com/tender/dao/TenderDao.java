@@ -9,4 +9,8 @@ public interface TenderDao {
 	
 	public List<Tender> viewAllTenderDetails() throws TenderException;
 	
+	public String createNewTender(Tender tender) throws TenderException;
+	
+	
+	
 }
